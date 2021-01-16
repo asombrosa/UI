@@ -1,0 +1,8 @@
+<div class="line-numbers">
+    <div *ngFor="let counter of counterArray; let i = index">{{i + 1}}</div>
+</div>
+<div class="text-area">
+  <textarea #textarea name="my-textarea"
+    (keyup.enter)="onEnter(textarea)">
+  </textarea>
+</div>
